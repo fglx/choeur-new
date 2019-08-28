@@ -8,3 +8,7 @@ function my_theme_enqueue_styles() {
     wp_enqueue_style($child_style, get_stylesheet_directory_uri() . '/style.css',  [$parent_style]);
 }
 
+add_action('wp_enqueue_scripts', 'remove_social_crap');
+function remove_social_crap() {
+    remove_action('the_content', 'basic_social_share_buttons');
+}
