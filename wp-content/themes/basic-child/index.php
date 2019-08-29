@@ -1,4 +1,6 @@
 <?php get_header(); ?>
+    <?php echo do_shortcode('[metaslider id="31"]'); ?>
+    <br>
 	<main id="content" class="content">
 	<?php do_action( 'basic_main_content_inner_begin' ); ?>
 
