@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=edge" /><![endif]-->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groupe vocal La Voix en Ch&oelig;ur &agrave; C&oelig;ur</title>
 
     <?php wp_head(); ?>
 
@@ -55,7 +56,7 @@
                 <?php do_action( 'basic_after_sitetitle' ); ?>
             </div>
 
-            <?php do_action( 'basic_header_top_wrap_end' ); ?>
+            <a href="<?php echo esc_url(home_url('/')); ?>"><?php do_action( 'basic_header_top_wrap_end' ); ?></a>
         </div>
 
         <?php do_action( 'basic_before_topnav' ); ?>
