@@ -123,3 +123,8 @@ body {
     /*border-radius: unset ;*/
     /*margin: 0 auto;*/
 /*}*/
+
+input.wpcf7-form-control:not([type="submit"]) {
+    width: 100%;
+    max-width: 400px;
+}
