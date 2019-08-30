@@ -36,7 +36,7 @@
 </div>
 <!-- .wrapper -->
 
-<a id="toTop">&#10148;</a>
+<!--<a id="toTop">&#10148;</a>-->
 
 <?php wp_footer(); ?>
 
