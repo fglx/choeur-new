@@ -12,3 +12,16 @@ add_action('wp_enqueue_scripts', 'remove_social_crap');
 function remove_social_crap() {
     remove_action('the_content', 'basic_social_share_buttons');
 }
+
+add_action('custom_header_top_wrap_end', 'clickable_banner');
+function clickable_banner() {
+    $header_image = get_header_image_tag();
+
+    if ( $header_image  ){ ?>
+        <div class="header-image">
+            <a href="<?php echo esc_url(home_url('/')); ?>">
+                <?php echo $header_image; ?>
+            </a>
+        </div>
+    <?php }
+}

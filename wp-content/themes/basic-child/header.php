@@ -56,7 +56,7 @@
                 <?php do_action( 'basic_after_sitetitle' ); ?>
             </div>
 
-            <a href="<?php echo esc_url(home_url('/')); ?>"><?php do_action( 'basic_header_top_wrap_end' ); ?></a>
+            <?php do_action( 'custom_header_top_wrap_end' ); ?>
         </div>
 
         <?php do_action( 'basic_before_topnav' ); ?>
